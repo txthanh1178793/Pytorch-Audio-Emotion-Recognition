@@ -50,4 +50,10 @@ To reproduce the models, run the following commands:
     $python train_full.py --train_df_path <path-to>/train_label.csv --test_dir <path-to>/Public_Test/ --model dcase --logdir models_dcase --output_name preds_dcase.npy
 
 
-
+"Đây là cuộc thi phân loại cảm xúc tuy nhiên model này có thể dùng cho audio classifcation nói chung, mình lấy lại từ cuộc thi Freesound 2019 của Kaggle thôi.
+Một số key features:
+Mixup + SpecAugment for data augmentation.
+CNN for audio classification with customized pooling.
+Cosine annealing learning scheduler.
+Test time augmentation (TTA)
+Enjoy."
